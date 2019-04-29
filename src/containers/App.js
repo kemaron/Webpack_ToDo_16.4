@@ -1,6 +1,7 @@
 import React from 'react';
 import uuid from 'uuid';
 import style from './App.css';
+import Title from '../components/Title';
 
 
 
@@ -26,6 +27,7 @@ class App extends React.Component {
     render() {
         return (
             <div className={style.TodoApp}>
+                <Title title='ToDo z Webpack' length={this.state.data.length} />
                 Tutaj pojawią się komponenty naszej aplikacji.
             </div>
         );
